@@ -377,8 +377,8 @@ body {
     display: flex;
     align-items: center;
     font-weight: 600;
-    font-size: 1rem;
-    color: #0dec0d !important;
+    font-size: 22px;
+    color: #e9f1e9 !important;
     text-decoration: none;
     transition: all 0.3s ease;
   }
