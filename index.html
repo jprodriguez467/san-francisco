@@ -4,7 +4,17 @@
     <!-- Meta tags básicos SIEMPRE VAN PRIMERO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- link google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mea+Culpa&display=swap"
+      rel="stylesheet"
+    />
+    />
+    <!--link de aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--fin -->
     <!-- Título de la página -->
     <title>San Francisco - C.E.F. Santa Fe</title>
 
@@ -110,19 +120,17 @@
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a class="dropdown-item" href="../pages/nivel-inicial.html"
+                    <a class="dropdown-item" href="../pages/inicial.html"
                       >Inicial</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="../pages/nivel-pimario.html"
+                    <a class="dropdown-item" href="../pages/pimario.html"
                       >Primario</a
                     >
                   </li>
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="../pages/nive-secundario.html"
+                    <a class="dropdown-item" href="../pages/secundario.html"
                       >Secundario</a
                     >
                   </li>
@@ -135,13 +143,16 @@
     </header>
     <main>
       <section class="portada001">
-        <h1 class="nombre"></h1>
+        <h1 class="mea-culpa-1001" data-aos="fade-up">
+          Escuela San Francisco.<br />
+          Santa Fe - Capital
+        </h1>
       </section>
     </main>
     <section>
-      <h2>Historia.</h2>
-      <h4>Centro Educativo Franciscano.</h4>
-      <p>
+      <h2 data-aos="fade-left">Historia.</h2>
+      <h4 data-aos="fade-right">Centro Educativo Franciscano.</h4>
+      <p data-aos="fade-up-right">
         La Escuela Primaria N° 1001 de San Francisco es la del Centro Educativo
         Franciscano de la ciudad de Santa Fe, la primera institución educativa
         de la provincia, fundada para ofrecer una educación formal a criollos y
@@ -234,10 +245,7 @@
             INFORMACIÓN DE CONTACTO <br />
             NIVEL SECUNDARIO.
           </h1>
-          <form
-            action="https://formsubmit.co/vivianacaminiti11@gmail.com"
-            method="POST"
-          >
+          <form action="https://formsubmit.co/tucorreo@gmail.com" method="POST">
             <!-- Campos ocultos para configurar FormSubmit -->
             <input
               type="hidden"
@@ -374,5 +382,11 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!--aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--fin-->
   </body>
 </html>

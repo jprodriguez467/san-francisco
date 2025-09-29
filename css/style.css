@@ -21,7 +21,24 @@ body {
   background-position: center;
 }
 
-header {
+.portada005 {
+  width: 100%;
+  aspect-ratio: 1080/600;
+  background-image: url(/images/portada-inicial.jpeg);
+  filter: brightness(0.8);
+  background-size: cover;
+  background-position: center;
+}
+
+.portada006 {
+  width: 100%;
+  aspect-ratio: 1080/600;
+  background-image: url(/images/portada-primario.png);
+  filter: brightness(0.8);
+  background-size: cover;
+  background-position: center;
+}
+.portada006 header {
   color: #fff;
 }
 
@@ -48,12 +65,37 @@ header {
 }
 
 .mea-culpa-regular {
-  font-family: "Mea Culpa", cursive;
+  font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
   color: #fff;
   font-size: 100px;
   text-align: center;
+  margin-top: 150px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 768px) {
+  .mea-culpa-regular {
+    font-size: 25px;
+    margin-top: 0;
+  }
+}
+
+.mea-culpa-1001 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 150px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 768px) {
+  .mea-culpa-1001 {
+    font-size: 25px;
+    margin-top: 0;
+  }
 }
 
 .pdf-downloads {
@@ -1058,6 +1100,17 @@ section p strong {
     max-width: 800px;
     z-index: 99;
   }
+}
+
+.niveles {
+  background: #FFF;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(9, 9, 121) 46%, rgb(0, 212, 255) 100%);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: 500;
 }
 
 body {
