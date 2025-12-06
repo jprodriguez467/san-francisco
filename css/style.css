@@ -29,7 +29,7 @@
 .portada006 {
   width: 100%;
   aspect-ratio: 1080/600;
-  background-image: url(/images/portada-primario.PNG);
+  background-image: url(/images/portada-primario.jpg);
   filter: brightness(0.8);
   background-size: cover;
   background-position: center;
