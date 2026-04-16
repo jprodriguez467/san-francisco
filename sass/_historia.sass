@@ -38,28 +38,30 @@ section
         animation-delay: 0.2s
         opacity: 0
 
-        &::before
-            content: '✟'
-            position: absolute
-            left: 50%
-            top: -30px
-            transform: translateX(-50%)
-            font-size: 2rem
-            color: #8b4513
-            opacity: 0.7
+    &::before
+        content: '✟'
+        position: absolute
+        left: 50%
+        top: -30px
+        transform: translateX(-50%)
+        font-size: 2rem
+        color: #8b4513
+        opacity: 0.7
 
-        &::after
-            content: ''
-            position: absolute
-            bottom: -15px
-            left: 50%
-            transform: translateX(-50%)
-            width: 120px
-            height: 4px
-            background: linear-gradient(90deg, #8b4513, #d4af37)
-            border-radius: 2px
-            box-shadow: 0 2px 4px rgba(139, 69, 19, 0.3)
+    &::after
+        content: ''
+        position: absolute
+        bottom: -15px
+        left: 50%
+        transform: translateX(-50%)
+        width: 120px
+        height: 4px
+        background: linear-gradient(90deg, #8b4513, #d4af37)
+        border-radius: 2px
+        box-shadow: 0 2px 4px rgba(139, 69, 19, 0.3)
 
+        &.sin-cruz::after
+            display: none !important
     // Subtítulos
     h4
         font-size: 1.8rem
