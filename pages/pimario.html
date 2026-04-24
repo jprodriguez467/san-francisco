@@ -1,41 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>N. Primario</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mea+Culpa&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Mea+Culpa&display=swap"
       rel="stylesheet"
     />
-
-    <!--link de archivos descargables-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>N.Primario</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-
-    <title>Escuela San Francisco- Santa Fe- Capital</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
-    <!-- Tu CSS personalizado al final para que tenga prioridad -->
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <img class="logo" src="../images/logo-primaria-1001.png" />
+        <img class="logo" src="../images/logo-primaria-1001.png" alt="Logo" />
         <a class="navbar-brand" href="../index.html">San Francisco-S.F.</a>
         <button
           class="navbar-toggler"
@@ -72,9 +61,8 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                >Niveles</a
               >
-                Niveles
-              </a>
               <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
@@ -91,207 +79,242 @@
         </div>
       </div>
     </nav>
+
     <main>
       <section class="portada006">
         <h1 class="mea-culpa-1001" data-aos="fade-up">Nivel Primario.</h1>
       </section>
 
-      <section>
+      <section class="orientaciones">
         <h2>Orientaciones Pedagógicas.</h2>
-        <h4>Nivel Pimario.</h4>
+        <h4>Nivel Primario.</h4>
         <p>
           La pedagogía franciscana en el nivel primario se basa en los valores
           de San Francisco de Asís, promoviendo una educación integral que
-          respeta la dignidad única de cada niño.<br />
-          La enseñanza privilegia el aprendizaje vivencial, la educación
-          emocional y la pedagogía del asombro, manteniendo viva la curiosidad
-          natural del niño. Se promueven valores franciscanos como la
-          simplicidad, humildad, alegría y paz. La evaluación es integral,
-          considerando no solo los conocimientos académicos sino también el
-          desarrollo personal, social y la vivencia de valores, formando niños
-          preparados para contribuir a un mundo más justo y fraterno.
+          respeta la dignidad única de cada niño. La enseñanza privilegia el
+          aprendizaje vivencial, la educación emocional y la pedagogía del
+          asombro, manteniendo viva la curiosidad natural del niño. Se promueven
+          valores franciscanos como la simplicidad, humildad, alegría y paz.
         </p>
+        <h3 class="promocion">Promoción 2025</h3>
       </section>
-      <!--carrusel de plantel docente-->
-      <!--carrusel de plantel docente-->
-      <h3 class="niveles">PLANTEL DOCENTE.</h3>
 
-      <div id="carouselPlantel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+      <!-- PLANTEL DOCENTE -->
+      <section class="turnos-section">
+        <h3 class="promocion">Plantel Docente</h3>
+        <div class="salas-grid">
+          <div class="sala-card">
             <img
               src="../images/plantel-docente-1.png"
-              class="d-block w-100"
-              alt="Plantel Docente 1"
+              alt="Plantel docente ciclo lectivo 2025"
             />
+            <div class="sala-info">
+              <span class="sala-tag tag-tarde">Docentes</span>
+              <h3>Ciclo lectivo 2025</h3>
+              <p>
+                Equipo comprometido con la formación integral de cada alumno.
+              </p>
+            </div>
           </div>
-          <div class="carousel-item">
+
+          <div class="sala-card">
             <img
               src="../images/plantel-docente-2.png"
-              class="d-block w-100"
-              alt="Plantel Docente 2"
+              alt="Plantel docente 2025"
             />
+            <div class="sala-info">
+              <span class="sala-tag tag-tarde">Docentes</span>
+              <h3>Equipo docente</h3>
+              <p>Formación con valores franciscanos desde 1591.</p>
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselPlantel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselPlantel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!--CARRUSEL DE 2 GRADO-->
-      <h3 class="niveles">SEGUNDO GRADO.</h3>
+      </section>
 
-      <div id="carouselTercero" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="../images/foto-1-2tm.png"
-              class="d-block w-100"
-              alt="3er grado foto 1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../images/foto 2 -2grado.png"
-              class="d-block w-100"
-              alt="3er grado foto 2"
-            />
+      <!-- GRADOS CON TABS -->
+      <section class="turnos-section">
+        <div class="tab-bar-turnos">
+          <button class="tab-turno active" onclick="switchGrado('primero')">
+            1er
+          </button>
+          <button class="tab-turno" onclick="switchGrado('segundo')">
+            2do
+          </button>
+          <button class="tab-turno" onclick="switchGrado('tercero')">
+            3er
+          </button>
+          <button class="tab-turno" onclick="switchGrado('cuarto')">4to</button>
+          <button class="tab-turno" onclick="switchGrado('quinto')">5to</button>
+          <button class="tab-turno" onclick="switchGrado('sexto')">6to</button>
+          <button class="tab-turno" onclick="switchGrado('septimo')">
+            7mo
+          </button>
+        </div>
+
+        <!-- 1ER GRADO -->
+        <div id="panel-primero" class="panel-turno active">
+          <div class="salas-grid">
+            <div class="sala-card">
+              <div class="sala-img-placeholder">📷 Foto próximamente</div>
+              <div class="sala-info">
+                <span class="sala-tag tag-manana">1er Grado</span>
+                <h3>Primer Grado</h3>
+                <p>Promoción 2025.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselTercero"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselTercero"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
-      <!--CARRUSEL 3er GRADO-->
-      <h3 class="niveles">TERCER GRADO.</h3>
+        <!-- 2DO GRADO -->
+        <div id="panel-segundo" class="panel-turno">
+          <div class="salas-grid">
+            <div class="sala-card">
+              <img
+                src="../images/foto-1-2tm.png"
+                alt="2do grado - Seño Anabel Krajancic"
+              />
+              <div class="sala-info">
+                <span class="sala-tag tag-manana">2do Grado</span>
+                <h3>Segundo Grado</h3>
+                <p>Seño Anabel Krajancic — Promoción 2025.</p>
+              </div>
+            </div>
 
-      <div id="carouselTercero" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="../images/foto-1-3tm.jpeg"
-              class="d-block w-100"
-              alt="3er grado foto 1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../images/foto-2-3tm.jpeg"
-              class="d-block w-100"
-              alt="3er grado foto 2"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../images/foto-4-3tm.jpeg"
-              class="d-block w-100"
-              alt="3er grado foto 3"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../images/foto-3-3tm.jpeg"
-              class="d-block w-100"
-              alt="3er grado foto 4"
-            />
+            <div class="sala-card">
+              <img
+                src="../images/foto_2_-2grado.png"
+                alt="2do grado - Seño Anabel Krajancic"
+              />
+              <div class="sala-info">
+                <span class="sala-tag tag-manana">2do Grado</span>
+                <h3>Segundo Grado</h3>
+                <p>Seño Anabel Krajancic — Promoción 2025.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselTercero"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselTercero"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
-      <!--CARRUSEL 5to GRADO-->
-      <h3 class="niveles">QUINTO GRADO.</h3>
+        <!-- 3ER GRADO -->
+        <div id="panel-tercero" class="panel-turno">
+          <div class="salas-grid">
+            <div class="sala-card">
+              <img
+                src="../images/foto-1-3tm.jpeg"
+                alt="3er grado - Seño Gabriela Hechim"
+              />
+              <div class="sala-info">
+                <span class="sala-tag tag-tarde">3er Grado</span>
+                <h3>Tercer Grado</h3>
+                <p>Seño Gabriela Hechim — Promoción 2025.</p>
+              </div>
+            </div>
 
-      <div id="carouselQuinto" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="../images/foto-1-5tm.png"
-              class="d-block w-100"
-              alt="5to grado foto 1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../images/foto-2-5tm.png"
-              class="d-block w-100"
-              alt="5to grado foto 2"
-            />
+            <div class="sala-card">
+              <img src="../images/foto-2-3tm.jpeg" alt="3er grado foto 2" />
+              <div class="sala-info">
+                <span class="sala-tag tag-tarde">3er Grado</span>
+                <h3>Tercer Grado</h3>
+                <p>Promoción 2025.</p>
+              </div>
+            </div>
+
+            <div class="sala-card">
+              <img src="../images/foto-3-3tm.jpeg" alt="3er grado foto 3" />
+              <div class="sala-info">
+                <span class="sala-tag tag-tarde">3er Grado</span>
+                <h3>Tercer Grado</h3>
+                <p>Promoción 2025.</p>
+              </div>
+            </div>
+
+            <div class="sala-card">
+              <img src="../images/foto-4-3tm.jpeg" alt="3er grado foto 4" />
+              <div class="sala-info">
+                <span class="sala-tag tag-tarde">3er Grado</span>
+                <h3>Tercer Grado</h3>
+                <p>Promoción 2025.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselQuinto"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselQuinto"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+
+        <!-- 4TO GRADO -->
+        <div id="panel-cuarto" class="panel-turno">
+          <div class="salas-grid">
+            <div class="sala-card">
+              <div class="sala-img-placeholder">📷 Foto próximamente</div>
+              <div class="sala-info">
+                <span class="sala-tag tag-manana">4to Grado</span>
+                <h3>Cuarto Grado</h3>
+                <p>Promoción 2025.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5TO GRADO -->
+        <div id="panel-quinto" class="panel-turno">
+          <div class="salas-grid">
+            <div class="sala-card">
+              <img
+                src="../images/foto-1-5tm.png"
+                alt="5to grado - Seño Paula Baccega"
+              />
+              <div class="sala-info">
+                <span class="sala-tag tag-tarde">5to Grado</span>
+                <h3>Quinto Grado</h3>
+                <p>Seño Paula Baccega — Promoción 2025.</p>
+              </div>
+            </div>
+
+            <div class="sala-card">
+              <img
+                src="../images/foto-2-5tm.png"
+                alt="5to grado - Seño Paula Baccega"
+              />
+              <div class="sala-info">
+                <span class="sala-tag tag-tarde">5to Grado</span>
+                <h3>Quinto Grado</h3>
+                <p>Seño Paula Baccega — Promoción 2025.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6TO GRADO -->
+        <div id="panel-sexto" class="panel-turno">
+          <div class="salas-grid">
+            <div class="sala-card">
+              <div class="sala-img-placeholder">📷 Foto próximamente</div>
+              <div class="sala-info">
+                <span class="sala-tag tag-manana">6to Grado</span>
+                <h3>Sexto Grado</h3>
+                <p>Promoción 2025.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7MO GRADO -->
+        <div id="panel-septimo" class="panel-turno">
+          <div class="salas-grid">
+            <div class="sala-card">
+              <div class="sala-img-placeholder">📷 Foto próximamente</div>
+              <div class="sala-info">
+                <span class="sala-tag tag-tarde">7mo Grado</span>
+                <h3>Séptimo Grado</h3>
+                <p>Promoción 2025.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!--footer inicio-->
+
     <footer class="pie">
       <div class="text-center">
         <h5 class="cont">Contáctanos</h5>
         <div class="social-section">
-          <!-- WhatsApp Nivel Primario -->
           <div class="social-group">
             <h6>Nivel <br />Inicial-Primario</h6>
             <a
@@ -303,13 +326,8 @@
               <i class="fab fa-whatsapp"></i>
             </a>
           </div>
-
-          <!-- Instagram Niveles Inicial y  Primario -->
           <div class="social-group">
-            <h6>
-              Niveles<br />
-              Inicial-Primario
-            </h6>
+            <h6>Niveles<br />Inicial-Primario</h6>
             <a
               href="https://www.instagram.com/escuelasanfrancisco1001sf?igsh=OTllaTZ6eTRkMGI0&utm_source=qr"
               target="_blank"
@@ -319,7 +337,6 @@
               <i class="fab fa-instagram"></i>
             </a>
           </div>
-          <!-- inicio YouTube -->
           <div class="social-group">
             <h6>YouTube</h6>
             <a
@@ -332,8 +349,6 @@
             </a>
           </div>
         </div>
-        <!--fin de youtube-->
-        <!-- Copyright -->
         <div class="copyright-container">
           <p class="copyright">
             © Copyright 2025
@@ -342,10 +357,33 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const grados = [
+        "primero",
+        "segundo",
+        "tercero",
+        "cuarto",
+        "quinto",
+        "sexto",
+        "septimo",
+      ];
+      function switchGrado(grado) {
+        document.querySelectorAll(".tab-turno").forEach((b, i) => {
+          b.classList.toggle("active", grados[i] === grado);
+        });
+        document
+          .querySelectorAll(".panel-turno")
+          .forEach((p) => p.classList.remove("active"));
+        document.getElementById("panel-" + grado).classList.add("active");
+      }
+    </script>
   </body>
 </html>
