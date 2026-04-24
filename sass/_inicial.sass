@@ -1,57 +1,111 @@
 @use 'variable' as *
 
 // Estilos para la sección de orientaciones
-// Estilos para la sección de orientaciones
 .orientaciones
     position: relative
     z-index: 2
     padding: 2rem 1rem
     margin-bottom: 2rem
-// Estilos para los títulos de niveles
-.niveles
-    position: relative
-    z-index: 2
-    margin: 3rem 0 1rem 0
-    padding: 1rem
-    background-color: white
-    clear: both
-    display: block
 
-// Contenedor del carrusel
-.carousel
-    position: relative
-    z-index: 1
-    margin: 0 auto 4rem auto
-    clear: both
-    width: 90%
-    max-width: 1200px
+// Sección de turnos
+.turnos-section
+    max-width: 900px
+    margin: 2rem auto
+    padding: 0 1.5rem
 
-// Estilos para el carrusel interno
-.carousel-inner
-    position: relative
-    width: 100%
-    height: auto
-    margin: 0
-    padding: 0
+// Barra de tabs
+.tab-bar-turnos
+    display: flex
+    border-bottom: 1px solid #ddd
+    margin-bottom: 2rem
 
-    @media (max-width: 768px)
+.tab-turno
+    flex: 1
+    padding: 12px 0
+    background: none
+    border: none
+    font-family: 'Poppins', sans-serif
+    font-size: 14px
+    font-weight: 500
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    color: #999
+    cursor: pointer
+    position: relative
+
+    &::after
+        content: ''
+        position: absolute
+        bottom: -1px
+        left: 15%
+        width: 70%
+        height: 2px
+        background: transparent
+        transition: background 0.2s
+
+    &.active
+        color: #2b2929
+
+        &::after
+            background: #222
+
+// Paneles
+.panel-turno
+    display: none
+
+    &.active
+        display: block
+
+// Grid de salas
+.salas-grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))
+    gap: 1.5rem
+
+// Cards
+.sala-card
+    border: 1px solid #e5e5e5
+    border-radius: 12px
+    overflow: hidden
+    transition: border-color 0.2s
+
+    &:hover
+        border-color: #aaa
+
+    img
         width: 100%
-        max-width: 300px
-        height: auto
-        margin: 0 auto
+        aspect-ratio: 4/3
+        object-fit: cover
+        display: block
 
-// Estilos para las imágenes del carrusel
-.carousel-item img
-    width: 100%
-    height: auto
-    display: block
+.sala-info
+    padding: 1rem 1.25rem
 
-// Media queries
-@media (max-width: 768px)
-    .niveles
-        margin: 2rem 0 1rem 0
-        padding: 0.5rem
-        font-size: 1.2rem
+    h3
+        font-size: 16px
+        font-weight: 600
+        color: #222
+        margin: 0 0 6px
 
-    .carousel
-        margin: 0 0 2rem 0
+    p
+        font-size: 13px
+        color: #666
+        margin: 0
+// Tags de turno
+.sala-tag
+    display: inline-block
+    font-size: 11px
+    font-weight: 600
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    padding: 3px 10px
+    border-radius: 999px
+    margin-bottom: 8px
+
+.tag-tarde
+    background: #dbeafe
+    color: #1e40af
+
+.tag-manana
+    background: #d1fae5
+    color: #065f46
