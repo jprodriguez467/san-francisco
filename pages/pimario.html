@@ -153,13 +153,41 @@
 
         <!-- 1ER GRADO -->
         <div id="panel-primero" class="panel-turno active">
-          <div class="salas-grid">
-            <div class="sala-card">
-              <div class="sala-img-placeholder">📷 Foto próximamente</div>
-              <div class="sala-info">
-                <span class="sala-tag tag-manana">1er Grado</span>
-                <h3>Primer Grado</h3>
-                <p>Promoción 2025.</p>
+          <div class="turno-subtabs">
+            <button
+              class="subtab active"
+              onclick="switchTurnoGrado('primero', 'manana', this)"
+            >
+              Mañana
+            </button>
+            <button
+              class="subtab"
+              onclick="switchTurnoGrado('primero', 'tarde', this)"
+            >
+              Tarde
+            </button>
+          </div>
+          <div id="primero-manana" class="subpanel active">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>1er Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="primero-tarde" class="subpanel">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-tarde">Tarde</span>
+                  <h3>1er Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -167,28 +195,52 @@
 
         <!-- 2DO GRADO -->
         <div id="panel-segundo" class="panel-turno">
-          <div class="salas-grid">
-            <div class="sala-card">
-              <img
-                src="../images/foto-1-2tm.png"
-                alt="2do grado - Seño Anabel Krajancic"
-              />
-              <div class="sala-info">
-                <span class="sala-tag tag-manana">2do Grado</span>
-                <h3>Segundo Grado</h3>
-                <p>Seño Anabel Krajancic — Promoción 2025.</p>
+          <div class="turno-subtabs">
+            <button
+              class="subtab active"
+              onclick="switchTurnoGrado('segundo', 'manana', this)"
+            >
+              Mañana
+            </button>
+            <button
+              class="subtab"
+              onclick="switchTurnoGrado('segundo', 'tarde', this)"
+            >
+              Tarde
+            </button>
+          </div>
+          <div id="segundo-manana" class="subpanel active">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <img src="../images/foto-1-2tm.png" alt="2do grado mañana" />
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>2do Grado</h3>
+                  <p>Seño Anabel Krajancic — Promoción 2025.</p>
+                </div>
+              </div>
+              <div class="sala-card">
+                <img
+                  src="../images/foto_2_-2grado.png"
+                  alt="2do grado mañana 2"
+                />
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>2do Grado</h3>
+                  <p>Seño Anabel Krajancic — Promoción 2025.</p>
+                </div>
               </div>
             </div>
-
-            <div class="sala-card">
-              <img
-                src="../images/foto_2_-2grado.png"
-                alt="2do grado - Seño Anabel Krajancic"
-              />
-              <div class="sala-info">
-                <span class="sala-tag tag-manana">2do Grado</span>
-                <h3>Segundo Grado</h3>
-                <p>Seño Anabel Krajancic — Promoción 2025.</p>
+          </div>
+          <div id="segundo-tarde" class="subpanel">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-tarde">Tarde</span>
+                  <h3>2do Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -196,43 +248,65 @@
 
         <!-- 3ER GRADO -->
         <div id="panel-tercero" class="panel-turno">
-          <div class="salas-grid">
-            <div class="sala-card">
-              <img
-                src="../images/foto-1-3tm.jpeg"
-                alt="3er grado - Seño Gabriela Hechim"
-              />
-              <div class="sala-info">
-                <span class="sala-tag tag-tarde">3er Grado</span>
-                <h3>Tercer Grado</h3>
-                <p>Seño Gabriela Hechim — Promoción 2025.</p>
+          <div class="turno-subtabs">
+            <button
+              class="subtab active"
+              onclick="switchTurnoGrado('tercero', 'manana', this)"
+            >
+              Mañana
+            </button>
+            <button
+              class="subtab"
+              onclick="switchTurnoGrado('tercero', 'tarde', this)"
+            >
+              Tarde
+            </button>
+          </div>
+          <div id="tercero-manana" class="subpanel active">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <img src="../images/foto-1-3tm.jpeg" alt="3er grado mañana" />
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>3er Grado</h3>
+                  <p>Seño Gabriela Hechim — Promoción 2025.</p>
+                </div>
+              </div>
+              <div class="sala-card">
+                <img src="../images/foto-2-3tm.jpeg" alt="3er grado mañana 2" />
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>3er Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
+              </div>
+              <div class="sala-card">
+                <img src="../images/foto-3-3tm.jpeg" alt="3er grado mañana 3" />
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>3er Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
+              </div>
+              <div class="sala-card">
+                <img src="../images/foto-4-3tm.jpeg" alt="3er grado mañana 4" />
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>3er Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
               </div>
             </div>
-
-            <div class="sala-card">
-              <img src="../images/foto-2-3tm.jpeg" alt="3er grado foto 2" />
-              <div class="sala-info">
-                <span class="sala-tag tag-tarde">3er Grado</span>
-                <h3>Tercer Grado</h3>
-                <p>Promoción 2025.</p>
-              </div>
-            </div>
-
-            <div class="sala-card">
-              <img src="../images/foto-3-3tm.jpeg" alt="3er grado foto 3" />
-              <div class="sala-info">
-                <span class="sala-tag tag-tarde">3er Grado</span>
-                <h3>Tercer Grado</h3>
-                <p>Promoción 2025.</p>
-              </div>
-            </div>
-
-            <div class="sala-card">
-              <img src="../images/foto-4-3tm.jpeg" alt="3er grado foto 4" />
-              <div class="sala-info">
-                <span class="sala-tag tag-tarde">3er Grado</span>
-                <h3>Tercer Grado</h3>
-                <p>Promoción 2025.</p>
+          </div>
+          <div id="tercero-tarde" class="subpanel">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-tarde">Tarde</span>
+                  <h3>3er Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -240,13 +314,41 @@
 
         <!-- 4TO GRADO -->
         <div id="panel-cuarto" class="panel-turno">
-          <div class="salas-grid">
-            <div class="sala-card">
-              <div class="sala-img-placeholder">📷 Foto próximamente</div>
-              <div class="sala-info">
-                <span class="sala-tag tag-manana">4to Grado</span>
-                <h3>Cuarto Grado</h3>
-                <p>Promoción 2025.</p>
+          <div class="turno-subtabs">
+            <button
+              class="subtab active"
+              onclick="switchTurnoGrado('cuarto', 'manana', this)"
+            >
+              Mañana
+            </button>
+            <button
+              class="subtab"
+              onclick="switchTurnoGrado('cuarto', 'tarde', this)"
+            >
+              Tarde
+            </button>
+          </div>
+          <div id="cuarto-manana" class="subpanel active">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>4to Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="cuarto-tarde" class="subpanel">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-tarde">Tarde</span>
+                  <h3>4to Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -254,28 +356,49 @@
 
         <!-- 5TO GRADO -->
         <div id="panel-quinto" class="panel-turno">
-          <div class="salas-grid">
-            <div class="sala-card">
-              <img
-                src="../images/foto-1-5tm.png"
-                alt="5to grado - Seño Paula Baccega"
-              />
-              <div class="sala-info">
-                <span class="sala-tag tag-tarde">5to Grado</span>
-                <h3>Quinto Grado</h3>
-                <p>Seño Paula Baccega — Promoción 2025.</p>
+          <div class="turno-subtabs">
+            <button
+              class="subtab active"
+              onclick="switchTurnoGrado('quinto', 'manana', this)"
+            >
+              Mañana
+            </button>
+            <button
+              class="subtab"
+              onclick="switchTurnoGrado('quinto', 'tarde', this)"
+            >
+              Tarde
+            </button>
+          </div>
+          <div id="quinto-manana" class="subpanel active">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <img src="../images/foto-1-5tm.png" alt="5to grado mañana" />
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>5to Grado</h3>
+                  <p>Seño Paula Baccega — Promoción 2025.</p>
+                </div>
+              </div>
+              <div class="sala-card">
+                <img src="../images/foto-2-5tm.png" alt="5to grado mañana 2" />
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>5to Grado</h3>
+                  <p>Seño Paula Baccega — Promoción 2025.</p>
+                </div>
               </div>
             </div>
-
-            <div class="sala-card">
-              <img
-                src="../images/foto-2-5tm.png"
-                alt="5to grado - Seño Paula Baccega"
-              />
-              <div class="sala-info">
-                <span class="sala-tag tag-tarde">5to Grado</span>
-                <h3>Quinto Grado</h3>
-                <p>Seño Paula Baccega — Promoción 2025.</p>
+          </div>
+          <div id="quinto-tarde" class="subpanel">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-tarde">Tarde</span>
+                  <h3>5to Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -283,13 +406,41 @@
 
         <!-- 6TO GRADO -->
         <div id="panel-sexto" class="panel-turno">
-          <div class="salas-grid">
-            <div class="sala-card">
-              <div class="sala-img-placeholder">📷 Foto próximamente</div>
-              <div class="sala-info">
-                <span class="sala-tag tag-manana">6to Grado</span>
-                <h3>Sexto Grado</h3>
-                <p>Promoción 2025.</p>
+          <div class="turno-subtabs">
+            <button
+              class="subtab active"
+              onclick="switchTurnoGrado('sexto', 'manana', this)"
+            >
+              Mañana
+            </button>
+            <button
+              class="subtab"
+              onclick="switchTurnoGrado('sexto', 'tarde', this)"
+            >
+              Tarde
+            </button>
+          </div>
+          <div id="sexto-manana" class="subpanel active">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>6to Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="sexto-tarde" class="subpanel">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-tarde">Tarde</span>
+                  <h3>6to Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -297,13 +448,41 @@
 
         <!-- 7MO GRADO -->
         <div id="panel-septimo" class="panel-turno">
-          <div class="salas-grid">
-            <div class="sala-card">
-              <div class="sala-img-placeholder">📷 Foto próximamente</div>
-              <div class="sala-info">
-                <span class="sala-tag tag-tarde">7mo Grado</span>
-                <h3>Séptimo Grado</h3>
-                <p>Promoción 2025.</p>
+          <div class="turno-subtabs">
+            <button
+              class="subtab active"
+              onclick="switchTurnoGrado('septimo', 'manana', this)"
+            >
+              Mañana
+            </button>
+            <button
+              class="subtab"
+              onclick="switchTurnoGrado('septimo', 'tarde', this)"
+            >
+              Tarde
+            </button>
+          </div>
+          <div id="septimo-manana" class="subpanel active">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-manana">Mañana</span>
+                  <h3>7mo Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="septimo-tarde" class="subpanel">
+            <div class="salas-grid">
+              <div class="sala-card">
+                <div class="sala-img-placeholder">📷 Foto próximamente</div>
+                <div class="sala-info">
+                  <span class="sala-tag tag-tarde">Tarde</span>
+                  <h3>7mo Grado</h3>
+                  <p>Promoción 2025.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -375,6 +554,7 @@
         "sexto",
         "septimo",
       ];
+
       function switchGrado(grado) {
         document.querySelectorAll(".tab-turno").forEach((b, i) => {
           b.classList.toggle("active", grados[i] === grado);
@@ -383,6 +563,18 @@
           .querySelectorAll(".panel-turno")
           .forEach((p) => p.classList.remove("active"));
         document.getElementById("panel-" + grado).classList.add("active");
+      }
+
+      function switchTurnoGrado(grado, turno, btn) {
+        const panel = document.getElementById("panel-" + grado);
+        panel
+          .querySelectorAll(".subtab")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        panel
+          .querySelectorAll(".subpanel")
+          .forEach((p) => p.classList.remove("active"));
+        document.getElementById(grado + "-" + turno).classList.add("active");
       }
     </script>
   </body>

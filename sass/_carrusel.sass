@@ -1,1 +1,28 @@
 @use 'variable' as *
+.turno-subtabs
+    display: flex
+    gap: 0.5rem
+    margin-bottom: 1.5rem
+
+.subtab
+    padding: 6px 18px
+    border-radius: 999px
+    border: 1px solid #ddd
+    background: none
+    font-family: 'Poppins', sans-serif
+    font-size: 12px
+    font-weight: 500
+    color: #999
+    cursor: pointer
+    transition: all 0.2s
+
+    &.active
+        background: #222
+        color: white
+        border-color: #222
+
+.subpanel
+    display: none
+
+    &.active
+        display: block
