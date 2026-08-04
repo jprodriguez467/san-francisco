@@ -201,7 +201,7 @@ main {
 .pie {
   width: 100%;
   background: linear-gradient(135deg, #030c1e 0%, #2a5298 100%);
-  color: white;
+  color: #ffffff;
   padding: 40px 0 20px;
   margin: 0;
   overflow: visible;
@@ -350,12 +350,14 @@ main {
 
 .jpr-cursiva {
   font-style: italic;
+  font-weight: 600;
 }
+
 .app-padres {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
   padding: 4rem 1.5rem;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 .app-padres__icono {
@@ -1108,7 +1110,7 @@ h4 {
   border-radius: 4px;
 }
 
-p {
+.cronograma-section p {
   color: #333;
   line-height: 1.8;
   font-size: 1rem;
