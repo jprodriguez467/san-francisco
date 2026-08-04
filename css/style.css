@@ -808,6 +808,10 @@ section p:hover {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
   background: rgba(255, 255, 255, 0.95);
 }
+section p::-moz-selection {
+  background: rgba(139, 69, 19, 0.2);
+  color: #8b4513;
+}
 section p::selection {
   background: rgba(139, 69, 19, 0.2);
   color: #8b4513;
@@ -1005,7 +1009,8 @@ section p strong {
 .sala-card img {
   width: 100%;
   aspect-ratio: 4/3;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
@@ -1239,6 +1244,4 @@ body {
 
 h1 {
   color: rgb(14, 133, 237);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
